@@ -1,16 +1,48 @@
-https://drive.google.com/drive/folders/1r6nmAlrYXFlUtIjO5C_xPLPDvWJjBziC?hl=ru
+* Данный проект выполнен в качестве итогового проекта для предмета "Инжиниринг управления данными"
 
-взяла с kaggle https://www.kaggle.com/datasets/uom190346a/global-coffee-health-dataset/data
+    * Для исследования были взяты данные из kaggle(ссылка:https://www.kaggle.com/datasets/uom190346a/global-coffee-health-dataset/data).
+    Также они загружены на Google Drive: https://drive.google.com/drive/folders/1r6nmAlrYXFlUtIjO5C_xPLPDvWJjBziC?hl=ru. [x]
+    
+    * Для работы с данными необходимо задать окружение. Для этого использовался дистрибутив miniconda, после его установки в терминале задаётся окружение с помощью следующих команд:
 
-Для работы с данными надо настроить окружение. Для этого устанавливаем condamini и в терминале вводим:
+    `conda create -n my_env python=3.13 pip`
+    `conda activate my_env`
 
-conda create -n my_env python=3.13 pip
-conda activate my_env
+    `pip install poetry`
+    `pip install pandas`
+    `pip install seaborn`
+    `poetry new my_project`
 
-pip install poetry
-pip install pandas
-poetry new my_project
+    `cd my_project`
+    `poetry add jupyterlab pandas matplotlib wget`
 
-cd my_project
-poetry add jupyterlab pandas matplotlib wget
-poetry add click
+
+    * Для написания кода использовался текстовый редактор VS Code, с созданным ранее окружением my_env. [x]
+
+    * Далее был написан data_loader.py, с помощью которого подгружаются данные и etl_pipeline.py, для обработки данных. [x]
+
+    * Для визуализации данных был написан файл coffee.ipynb, для его создания в терминале нужно набрать команду 
+
+    `jupiter notebook`
+
+    * после этого будет создана ссылка на ядро с заданным окружением. [x]
+
+Структура проекта: 
+
+    COFFEEEEE/
+    ├─ data/
+    │  ├─ __init__.py     
+    │  ├─ extract.py    
+    │  ├─ transform.py
+    │  ├─ validate.py
+    │  ├─ load.py
+    │  ├─ collect.py
+    │  └─ main.py
+    ├─ data/
+    │  ├─ raw/             
+    │  └─ processed/      
+    ├─ notebooks/
+    │  └─ EDA.ipynb
+    ├─ screenshots/
+    ├─ README.md
+    └─ .gitignore
