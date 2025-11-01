@@ -1,7 +1,7 @@
 * Данный проект выполнен в качестве итогового проекта для предмета "Инжиниринг управления данными"
 
     * Для исследования были взяты данные из kaggle(ссылка:https://www.kaggle.com/datasets/uom190346a/global-coffee-health-dataset/data).
-    Также они загружены на Google Drive: https://drive.google.com/drive/folders/1r6nmAlrYXFlUtIjO5C_xPLPDvWJjBziC?hl=ru.
+    Также они загружены на Google Drive: https://drive.google.com/drive/folders/1r6nmAlrYXFlUtIjO5C_xPLPDvWJjBziC?hl=ru. [x]
     
     * Для работы с данными необходимо задать окружение. Для этого использовался дистрибутив miniconda, после его установки в терминале задаётся окружение с помощью следующих команд:
 
@@ -17,7 +17,7 @@
     `poetry add jupyterlab pandas matplotlib wget`
 
 
-    * Для написания кода использовался текстовый редактор VS Code, с созданным ранее окружением my_env.
+    * Для написания кода использовался текстовый редактор VS Code, с созданным ранее окружением my_env. 
 
     * Далее был написан data_loader.py, с помощью которого подгружаются данные и etl_pipeline.py, для обработки данных.
 
@@ -25,24 +25,19 @@
 
     `jupiter notebook`
 
-    * после этого будет создана ссылка на ядро с заданным окружением.
+    * после этого будет создана ссылка на ядро с заданным окружением. 
 
 Структура проекта: 
 
-    COFFEEEEE/
-    ├─ data/
-    │  ├─ __init__.py     
-    │  ├─ extract.py    
-    │  ├─ transform.py
-    │  ├─ validate.py
-    │  ├─ load.py
-    │  ├─ collect.py
-    │  └─ main.py
-    ├─ data/
-    │  ├─ raw/             
-    │  └─ processed/      
-    ├─ notebooks/
-    │  └─ EDA.ipynb
-    ├─ screenshots/
-    ├─ README.md
-    └─ .gitignore
+   my_project/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+│   └── EDA.ipynb
+├── src/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   └── etl_pipeline.py
+├── pyproject.toml
+└── README.md
