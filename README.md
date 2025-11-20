@@ -40,7 +40,8 @@ coffeeeee/
 │ ├── etl_pipeline.py
 │ └── write_to_db.py
 ├── .gitignore
+├── README.md
 ├── environment.yml
-├── pyproject.toml
-└── README.md
+└── pyproject.toml
 ```
+
