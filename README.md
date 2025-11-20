@@ -1,7 +1,9 @@
 #### Данный проект выполнен в качестве итогового проекта для предмета "Инжиниринг управления данными"
 
  Для исследования были взяты данные из kaggle(ссылка:https://www.kaggle.com/datasets/uom190346a/global-coffee-health-dataset/data).
-    Также они загружены на Google Drive: https://drive.google.com/drive/folders/1r6nmAlrYXFlUtIjO5C_xPLPDvWJjBziC?hl=ru.
+ 
+ Также они загружены на Google Drive: https://drive.google.com/drive/folders/1r6nmAlrYXFlUtIjO5C_xPLPDvWJjBziC?hl=ru.
+
     
  Для работы с данными необходимо задать окружение. Для этого использовался дистрибутив miniconda, после его установки в терминале задаётся окружение с помощью следующих команд:
 
@@ -40,6 +42,7 @@ coffeeeee/
 ├── environment.yml
 └── pyproject.toml
 ```
+
 
 
 
